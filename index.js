@@ -8,7 +8,7 @@ const calculPoints = (value1, value2, value3, value4, value5) => {
             points += 50;
             break;
         }
-        
+
         // si les 5 valeurs se suivent
         if (values[i] === values[i + 1] - 1 && values[i] === values[i + 2] - 2 && values[i] === values[i + 3] - 3 && values[i] === values[i + 4] - 4) {
             points += 40;
@@ -31,9 +31,15 @@ const calculPoints = (value1, value2, value3, value4, value5) => {
             points += 28;
             break;
         }
+
+        // si pas de figure
+        if (i === values.length - 1) {
+            points += values[0] + values[1] + values[2] + values[3] + values[4];
+        }
     }
 
     return points;
 }
+
 
 module.exports = calculPoints;

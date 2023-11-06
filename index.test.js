@@ -29,3 +29,9 @@ describe('calculPoints', () => {
         expect(calculPoints(2, 2, 2, 2, 2)).toBe(50);
     });
 });
+
+describe('calculPoints', () => {
+    it("should return 12 when given Chance", () => {
+        expect(calculPoints(1, 2, 4, 3, 2)).toBe(12);
+    });
+});
