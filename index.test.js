@@ -23,3 +23,9 @@ describe('calculPoints', () => {
         expect(calculPoints(1, 2, 3, 4, 5)).toBe(40);
     });
 });
+
+describe('calculPoints', () => {
+    it("should return 50 when given YAMS", () => {
+        expect(calculPoints(2, 2, 2, 2, 2)).toBe(50);
+    });
+});

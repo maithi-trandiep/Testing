@@ -3,6 +3,12 @@ const calculPoints = (value1, value2, value3, value4, value5) => {
     let values = [value1, value2, value3, value4, value5];
     values.sort();
     for (let i = 0; i < values.length; i++) {
+        // si les 5 valeurs sont identiques
+        if (values[i] === values[i + 1] && values[i] === values[i + 2] && values[i] === values[i + 3] && values[i] === values[i + 4]) {
+            points += 50;
+            break;
+        }
+        
         // si les 5 valeurs se suivent
         if (values[i] === values[i + 1] - 1 && values[i] === values[i + 2] - 2 && values[i] === values[i + 3] - 3 && values[i] === values[i + 4] - 4) {
             points += 40;
