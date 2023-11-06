@@ -7,7 +7,13 @@ describe('calculPoints', () => {
 });
 
 describe('calculPoints', () => {
-    it("should return 35 when given Carrée", () => {
+    it("should return 35 when given Carré", () => {
         expect(calculPoints(2, 5, 2, 2, 2)).toBe(35);
+    });
+});
+
+describe('calculPoints', () => {
+    it("should return 30 when given Full", () => {
+        expect(calculPoints(2, 5, 5, 2, 2)).toBe(30);
     });
 });
