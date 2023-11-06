@@ -17,3 +17,9 @@ describe('calculPoints', () => {
         expect(calculPoints(2, 5, 5, 2, 2)).toBe(30);
     });
 });
+
+describe('calculPoints', () => {
+    it("should return 40 when given Suite", () => {
+        expect(calculPoints(1, 2, 3, 4, 5)).toBe(40);
+    });
+});
